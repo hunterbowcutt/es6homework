@@ -1,4 +1,4 @@
-const weightedLottery = weights => {
+export const weightedLottery = weights => {
     let containerArray = [];
     Object.keys(weights).forEach(key =>{
       for (let i = 0; i < weights[key]; i++) {
@@ -7,7 +7,7 @@ const weightedLottery = weights => {
     }) 
     return containerArray[(Math.random() * containerArray.length) | 0];
 };
-const weights = {
+export const weights = {
     green: 1,
     yellow: 2,
     red: 3

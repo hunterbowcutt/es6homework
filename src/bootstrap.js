@@ -1,2 +1,1 @@
-import (waightedLottery)
-console.log(weightedLottery)
+import {weights, weightedLottery} from "./weightedLottery"
